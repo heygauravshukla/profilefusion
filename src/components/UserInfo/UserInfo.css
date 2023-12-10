@@ -1,0 +1,93 @@
+.form-wrapper {
+  display: grid;
+  gap: 1rem;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+  height: fit-content;
+  padding: 1.5rem;
+}
+
+.tabs-wrapper {
+  display: flex;
+  gap: 1rem;
+  overflow-x: scroll;
+  padding-block-end: 1rem;
+}
+
+.tabs-wrapper::-webkit-scrollbar {
+  height: 10px;
+}
+
+.tabs-wrapper::-webkit-scrollbar-thumb {
+  border-radius: 100vh;
+  background-color: var(--color-primary-700);
+}
+
+.tabs-wrapper .tab {
+  font-size: 1.2rem;
+  min-width: fit-content;
+  color: var(--color-primary-950);
+  background-color: var(--color-primary-200);
+}
+
+.tabs-wrapper .active-tab {
+  color: var(--color-primary-50);
+  background-color: var(--color-primary-800);
+}
+
+.input-wrapper {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+}
+
+.chip {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1rem;
+  color: var(--color-primary-950);
+  background-color: var(--color-primary-200);
+}
+
+.chip svg {
+  height: 1.2rem;
+  width: 1.2rem;
+}
+
+.chips .active-chip {
+  color: var(--color-primary-50);
+  background-color: var(--color-primary-800);
+}
+
+.chips .new {
+  color: var(--color-primary-950);
+  background-color: var(--color-primary-200);
+}
+
+.detail {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.detail .row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.detail .column {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.detail .row > div {
+  flex: 1;
+}

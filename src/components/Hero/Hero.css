@@ -1,0 +1,49 @@
+.hero-section {
+  display: grid;
+  gap: 1rem;
+  min-height: 100vh;
+
+  @media (min-width: 1100px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.hero-section .text-box {
+  display: grid;
+  gap: 1.5rem;
+  order: 2;
+  text-align: center;
+  place-items: center;
+
+  @media (min-width: 1024px) {
+    order: 1;
+    text-align: left;
+    justify-items: start;
+    align-content: center;
+  }
+
+  @media (min-width: 1200px) {
+    max-width: 50ch;
+  }
+}
+
+.hero-section .image-box {
+  display: grid;
+  order: 1;
+
+  @media (min-width: 1024px) {
+    order: 2;
+  }
+}
+
+.hero-section .image-box img {
+  height: 100%;
+  width: 100%;
+}
+
+.hero-section .button {
+  width: 100%;
+  @media (min-width: 768px) {
+    max-width: fit-content;
+  }
+}
